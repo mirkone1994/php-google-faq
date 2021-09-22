@@ -44,11 +44,31 @@
     <title>Google FAQ</title>
 </head>
 <body>
-    <?php foreach ($faqs as $title => $faq) { ?>
-        <h1><?= $title; ?></h1>
+    <div id="header" class="container-fluid">
+        <div class="row align-items-center">
+            <div class="col-1"><img class="img-fluid w-75 d-inline" src="./img/logo.png" alt=""></div>
+            <div class="col-2"><span class="h-blod fs-4 text-decoration-underline">Privacy e Termini</span></div>
+             
+        </div>
+        <div class="row">
+            <div class="col-1"><span>Introduzione</span></div>
+            <div class="col-1"><span>Nomre sulla privacy</span></div>
+            <div class="col-1"><span>Termini di servizio</span></div>
+            <div class="col-1"><span>Tecnologie</span></div>
+            <div class="col-1"><span class="text-primary">Domande frequenti</span></div>
+        </div>
+        <hr>
+    </div>
+    <div id="main" class="container mt-5">
+        <div class="row gy-3">
+        <?php foreach ($faqs as $title => $faq) { ?>
+        <h3><?= $title; ?></h3>
         <?php foreach ($faq as $faqn) { ?>
             <p><?= $faqn ?></p>
         <?php } ?>
     <?php } ?>
+        </div>
+    </div>
+    
 </body>
 </html>
