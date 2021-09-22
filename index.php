@@ -41,6 +41,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.1/css/bootstrap.min.css' integrity='sha512-6KY5s6UI5J7SVYuZB4S/CZMyPylqyyNZco376NM2Z8Sb8OxEdp02e1jkKk/wZxIEmjQ6DRCEBhni+gpr9c4tvA==' crossorigin='anonymous'/>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css' integrity='sha512-q3eWabyZPc1XTCmF+8/LuE1ozpg5xxn7iO89yfSOd5/oKvyqLngoNGsx8jq92Y8eXJ/IRxQbEC+FGSYxtk2oiw==' crossorigin='anonymous'/>
     <title>Google FAQ</title>
 </head>
 <body>
@@ -67,6 +68,22 @@
             <p><?= $faqn ?></p>
         <?php } ?>
     <?php } ?>
+        </div>
+    </div>
+    <div id="footer" class="container-fluid bg-light">
+        <div class="container py-3">
+            <div class="row justify-content-between">
+            <div class="col-5">
+                <span>Google - Tutto su Google - Privacy - Termini</span>
+            </div>
+            <div class="col-2">
+            <i class="fas fa-globe-europe text-primary"></i>
+                <select name="lang" id="lang">
+                    <option value="Italiano">Italiano</option>
+                </select>
+            </div>
+            </div>
+            
         </div>
     </div>
     
